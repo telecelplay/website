@@ -34,7 +34,7 @@
       <div>
         <label for="logs">logs:</label>
         <textarea id="logs" name="story"
-                  rows="20" cols="200">
+                  rows="10" cols="100">
         </textarea>
       </div>
     </div>
@@ -55,7 +55,7 @@
     contractAddressTf.value=contractAddress;
     var methodName = "fixedFee";
     methodNameTf.value=methodName;
-    var web3 = new Web3(provider);
+    var web3 = new Web3(new Web3.providers.HttpProvider(provider));
     var abi = [
   {
     "inputs": [],
@@ -446,7 +446,7 @@
     function changeProvider(){
       provider=jsonrpcUrlTf.value;
       log.value = "changeProvider ="+provider;
-      web3.setProvider(provider);
+      web3.setProvider(new Web3.providers.HttpProvider(provider));
     }
     function changeContractAddress(){
       contractAddress=contractAddressTf.value;
@@ -458,11 +458,13 @@
     }
 
     function executeTransaction(){
-      log.value = "web3.version="+web3.version;
       const connectedContract = new web3.eth.Contract(abi);
-      const txn = eval("connectedContract."+methodName+"()");
+      connectedContract.options.address = contractAddress;
+      let invokation = "connectedContract.methods."+methodName+"().call()";
+      log.value = invokation;
+      const txn = eval(invokation);
       txn.then(function(result) {
-        log.value += result;
+        log.value += "\n result:" + result;
       })
     }
 
