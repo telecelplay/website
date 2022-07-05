@@ -433,6 +433,10 @@ input[type=number]::-webkit-outer-spin-button {
 
 @media only screen and (max-width: 425px) {
 
+    body {
+        text-align: -webkit-center;
+    }
+
     p {
         line-height: normal!important;
         max-width: 321px!important;
@@ -442,6 +446,10 @@ input[type=number]::-webkit-outer-spin-button {
     .container {
         width: 100%;
         margin-top: 57px;
+    }
+
+    .sector {
+        width: 90%
     }
 
     .content {
@@ -548,14 +556,15 @@ input[type=number]::-webkit-outer-spin-button {
     .hand {
         width: 133px;
         height: 169px;
-        left: 338px;
-        top: 2807px;
+        left: 280px;
+        top: 2841px;
     }
 
     .pattern {
         width: 248px;
         height: 75.31px;
-        top: 2941px;
+        top: 2976px;
+        left: 0;
     }
 
     .fix2 {
@@ -582,6 +591,7 @@ input[type=number]::-webkit-outer-spin-button {
 
     .colored {
         margin-top: 0px;
+        width: 100%;
         background-color: #fff;
     }
 
@@ -596,7 +606,7 @@ input[type=number]::-webkit-outer-spin-button {
 
     .pattern2 {
         width: 300px;
-        top: 4625px;
+        top: 4685px;
     }
 
     .cardImgP {
@@ -655,14 +665,28 @@ input[type=number]::-webkit-outer-spin-button {
     }
 
     .sendArrow {
-        left: -60px;
+        left: 230px;
+        top: -52px;
     }
 
     .copyright {
-        left: 16%;
+        top: -20px;
     }
 
     .contactP {
         font-size: 14px;
+    }
+
+    .secondary {
+        width: 100%;
+    }
+
+    .leaves {
+        position: unset;
+    }
+
+    .input {
+        margin-top: 10px;
+        float: left;
     }
 }
