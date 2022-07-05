@@ -10,6 +10,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Sora&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
     <title>Telecel</title>
+        <script>
+    function submitContact(){
+          let xhr = new XMLHttpRequest();
+          xhr.open("POST", "https://us14.list-manage.com/contact-form/post?u=3e1f10949c60371f9a38d0f8f&form_id=d1d79716e020ffd75ad1f7b894b4bc7e");
+          let data = '{"fields":{"1742":"'+document.getElementById("fields.1742").value+'","1746":"'+document.getElementById("fields.1746").value +'","1750":"'+document.getElementById("fields.1750").value +'"},"subscribe":false}';
+          xhr.send(data);
+      }
+    </script>
 </head>
 <body>
     <div class="main">
@@ -177,18 +185,18 @@
                         <div class="row">
                             <div class="column flex alignTop">
                                 <p class="contactP whiteP">Email</p>
-                                <input type="email" class="contactInput">
+                               <input type="email" class="contactInput" id="fields.1742" name="fields.1742" value="" autocomplete="off">
                             </div>
                             <div class="column flex alignTop">
                                 <p class="contactP whiteP">Numéro de télèphone</p>
-                                <input type="number" class="contactInput">
+                                  <input type="tel" id="fields.1746" name="fields.1746" value="" autocomplete="off"  class="contactInput">
                             </div>
                         </div>
                         <div class="column flex alignTop">
                             <p class="contactP whiteP">Votre message</p>
-                            <textarea class="contactText"></textarea>
+                              <textarea class="contactText" id="fields.1750" aria-describedby="mc:14" name="fields.1750" rows="8" style="resize: none;" autocomplete="off"></textarea>
                         </div>
-                        <button class="sendBtn">Envoyer</button>
+                          <button class="sendBtn" onclick="submitContact()">Envoyer</button>
                     </div>
                 </div>
             </div>
@@ -214,11 +222,13 @@
                             <p class="paragraph whiteP footerP footerP2">Politique de confidentialité</p>
                         </div>
                         <div class="column">
-                            <p class="paragraph whiteP footerP footerP2 bold">Inscrivez-vous à notre Newsletter </p>
-                            <p class="paragraph whiteP footerP footerP3">Pour être informé en avant-première de nos nouveautés.</p>
-                            <input type="email" placeholder="Votre adresse mail" class="contactInput input">
-                            <img src="assets/arrow-icon.svg" alt="" class="sendArrow">
-                            <div class="clear"></div>
+                            <form action="https://telecelplay.us14.list-manage.com/subscribe/post?u=3e1f10949c60371f9a38d0f8f&amp;id=c9e137faa5" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"  novalidate>
+                                <p class="paragraph whiteP footerP footerP2 bold">Inscrivez-vous à notre Newsletter </p>
+                                <p class="paragraph whiteP footerP footerP3">Pour être informé en avant-première de nos nouveautés.</p>
+                                <input type="email" value="" name="EMAIL" placeholder="Votre adresse mail" class="contactInput input" id="mce-EMAIL">
+                                <img src="assets/arrow-icon.svg" alt="" class="sendArrow" onClick="document.forms['mc-embedded-subscribe-form'].submit()">
+                                <div class="clear"></div>
+                            </form>
                         </div>
                     </div>
                 </div>
