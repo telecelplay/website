@@ -423,6 +423,14 @@ p {
     font-weight: 100;
 }
 
+.hide {
+    display: none;
+}
+
+.hideFix {
+    height: 360px;
+}
+
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
     -webkit-appearance: none;
@@ -692,5 +700,9 @@ input[type=number]::-webkit-outer-spin-button {
 
     .fix6 {
         width: 100%
+    }
+
+    .hideFix {
+        height: 710px;
     }
 }
