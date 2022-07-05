@@ -1,0 +1,668 @@
+body {
+    margin: 0;
+}
+
+p {
+    font-family: 'Sora';
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('assets/fonts/Avenir.otf') format('opentype');
+}
+
+.container {
+    width: 1440px;
+    display: flex;
+    justify-content: center;
+    margin-top: 92px;
+}
+
+.content {
+    width: 1150px;
+}
+
+.main {
+    display: flex;
+    background-color: #FEF6EF;
+    height: 732px;
+    width: 100%;
+    justify-content: center;
+}
+
+.sector {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.mainMobile {
+    position: absolute;
+    width: 537px;
+    height: 408px;
+    left: 50%;
+    top: 256px;
+}
+
+.mainAccessories {
+    position: absolute;
+    width: 408.5px;
+    height: 259.56px;
+    left: 62%;
+    top: 534px;
+}
+
+.soon {
+    margin-top: 20px;
+    width: 169px;
+    height: 41px;
+    background: #E03434;
+    border-radius: 20.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.soonText {
+    font-size: 14px;
+    color: #fff;
+}
+
+.row {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.rowB {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    margin-top: 20px;
+    flex-direction: column;
+}
+
+.flex {
+    display: flex;
+}
+
+.space {
+    margin-top: 244px;
+}
+
+.centralize {
+    align-items: center;
+}
+
+.justifyCenter {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.storeLogos {
+    margin-right: 7px;
+}
+
+.title {
+    width: 568px;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 45px;
+}
+
+.primary {
+    width: 511px;
+}
+
+.paragraph {
+    margin-top: 15px;
+    width: 541px;
+    font-size: 21px;
+    line-height: 40px;
+    font-family: 'Avenir';
+}
+
+.spaced {
+    margin-top: 216px;
+}
+
+.spaced2 {
+    margin-top: 146px;
+}
+
+.mainTitle {
+    width: 552px;
+    margin-top: 139px;
+    font-family: 'Sora';
+    font-size: 31px;
+    font-weight: 700;
+}
+
+.mainP {
+    width: 552px;
+    margin-top: 20px;
+    font-size: 24px;
+    font-family: 'Avenir';
+    font-weight: 400;
+}
+
+.cell2 {
+    position: absolute;
+    width: 419px;
+    height: 526px;
+    top: 912px;
+}
+
+.vector {
+    position: absolute;
+    top: 1150px;   
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+.cardTitle {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.cardP {
+    margin-top: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 18px;
+    font-family: 'Avenir';
+    width: 300px;
+    font-weight: 700;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    margin-top: 213px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 368px;
+    height: 508px;
+}
+
+.prime {
+    background-color: #05B44B;
+    border-radius: 18px;
+    color: #fff;
+}
+
+.icon {
+    margin-top: 24px;
+    margin-bottom: 33px;
+}
+
+.sectorTitle {
+    color: #AE5C24;
+    font-weight: 700;
+    font-size: 34px;
+    margin-top: 241px;
+    text-align: center;
+    margin-bottom: 131px;
+}
+
+.textCentralize {
+    text-align: -webkit-center;
+}
+
+.secondary {
+    height: 384px;
+    background-color: #C56A03;
+    margin-top: 29px;
+}
+
+.whiteP {
+    color: #fff;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.hand {
+    position: absolute;
+    width: 439px;
+    height: 559px;
+    left: 1112px;
+    top: 2614px;
+}
+
+.pattern {
+    position: absolute;
+    width: 692.86px;
+    height: 186.31px;
+    top: 3087px;
+}
+
+.pattern2 {
+    position: absolute;
+    top: 5400px;
+    right: 0;
+}
+
+.noMargin {
+    margin: 0
+}
+
+.group {
+    position: absolute;
+    width: 419px;
+    height: 526px;
+    top: 3355px;
+}
+
+.convo {
+    position: absolute;
+    width: 419px;
+    height: 526px;
+    top: 3938px;
+    left: 1050px;
+}
+
+.smile {
+    margin-right: 15px;
+}
+
+.bkgImg {
+    background-image: url('assets/bkg.svg');
+    height: 513px;
+}
+
+.colored {
+    margin-top: 92px;
+    background-color: #F09A38;
+}
+
+.cardImg {
+    margin-bottom: 26px;
+}
+
+.alignTop {
+    align-items: flex-start;
+}
+
+.cardImgP {
+    width: 220px;
+    font-size: 18px;
+}
+
+.cardImgContainer {
+    margin-right: 23px;
+    text-align: -webkit-center;
+    margin-bottom: 92px;
+}
+
+.leaves {
+    width: 100%;
+    position: absolute;
+}
+
+.bottomContainer {
+    background: rgb(174,92,36);
+    background: linear-gradient(180deg, rgba(174,92,36,1) 55%, rgba(102,51,19,1) 70%);
+    height: 1072px;
+}
+
+.contactP {
+    font-family: 'Avenir';
+    font-size: 18px;
+}
+
+.contactInput {
+    font-family: 'Avenir';
+    font-size: 16px;
+    color: #fff;
+    background: transparent;
+    border: 2px solid #FFFFFF;
+    border-radius: 30px;
+    width: 259px;
+    height: 48px;
+    margin-right: 20px;
+    padding-left: 15px;
+}
+
+.input {
+    background: rgba(255, 255, 255, 0.53);
+}
+
+.contactText {
+    font-family: 'Avenir';
+    font-size: 16px;
+    color: #fff;
+    background: transparent;
+    border: 2px solid #FFFFFF;
+    border-radius: 30px;
+    resize: none;
+    width: 544px;
+    height: 173px;
+    padding: 15px;
+    overflow-y: hidden;
+}
+
+.sendBtn {
+    width: 450px;
+    height: 45px;
+    border: 0;
+    border-radius: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 15px;
+    background-color: #F09A38;
+    color: #fff;
+    font-family: 'Avenir';
+    font-weight: 700;
+}
+
+.logoFooter {
+    filter: brightness(10);
+    margin-bottom: 16px;
+}
+
+.footer {
+    margin-top: 80px;
+}
+
+.socials {
+    margin-right: 36px;
+}
+
+.footerP {
+    width: 435px;
+    line-height: normal;
+}
+
+.footerP1 {
+    font-size: 18px;
+}
+
+.footerP2 {
+    font-size: 16px;
+}
+
+.footerP3 {
+    font-size: 14px;
+    width: 284px;
+}
+
+.sendArrow {
+    position: relative;
+    top: 20px;
+    left: -75px;
+}
+
+.copyright {
+    font-size: 12px;
+    position: relative;
+    top: 55px;
+    color: #fff;
+    text-align: -webkit-center;
+    font-weight: 100;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+@media only screen and (max-width: 425px) {
+
+    p {
+        line-height: normal!important;
+        max-width: 321px!important;
+        text-align: left;
+    }
+
+    .container {
+        width: 100%;
+        margin-top: 57px;
+    }
+
+    .content {
+        width: 80%;
+        text-align: -webkit-center;
+    }
+
+    .fix {
+        text-align: left;
+    }
+
+    .mainMobile {
+        position: absolute;
+        width: 275px;
+        height: 209px;
+        left: 15%;
+        top: 522px;
+    }
+
+    .mainAccessories {
+        position: absolute;
+        width: 208px;
+        height: 133px;
+        left: 45%;
+        top: 650px;
+    }
+
+    .mainTitle {
+        margin-top: 73px;
+        font-size: 18px;
+        width: 317px;
+    }
+
+    .mainP {
+        font-size: 16px;
+        width: 323px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .right {
+        float: unset;
+    }
+
+    .left {
+        float: unset;
+    }
+
+    .title {
+        margin-top: 52px;
+        font-size: 18px;
+    }
+
+    .paragraph {
+        font-size: 16px;
+    }
+
+    .vector {
+        left: 30%;
+        top: 1163px;
+        width: 56px;
+        height: 112px;
+    }
+
+    .cell2 {
+        left: 30%;
+        top: 1053px;
+        width: 185px;
+        height: 233px;
+    }
+
+    .cards {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+
+    .card {
+        margin-top: 50px;
+        height: 271px;
+    }
+
+    .cardP {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .cardTitle {
+        font-size: 16px;
+    }
+
+    .icon {
+        margin-bottom: 10px;
+    }
+
+    .sectorTitle {
+        font-size: 18px;
+        margin-top: 120px;
+        margin-bottom: 70px;
+    }
+
+    .hand {
+        width: 133px;
+        height: 169px;
+        left: 338px;
+        top: 2807px;
+    }
+
+    .pattern {
+        width: 248px;
+        height: 75.31px;
+        top: 2941px;
+    }
+
+    .fix2 {
+        margin-top: 400px;
+    }
+
+    .group {
+        width: 293.08px;
+        height: 335px;
+        left: 20%;
+        top: 3310px
+    }
+
+    .fix3 {
+        margin-top: 350px;
+    }
+
+    .convo {
+        width: 297px;
+        height: 295px;
+        left: 20%;
+        top: 3905px;
+    }
+
+    .colored {
+        margin-top: 0px;
+        background-color: #fff;
+    }
+
+    .bkgImg {
+        height: 202px;
+    }
+    
+    .cardImgContainer {
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+
+    .pattern2 {
+        width: 300px;
+        top: 4625px;
+    }
+
+    .cardImgP {
+        text-align: -webkit-center;
+        font-size: 14px;
+    }
+
+    .fix4 {
+        text-align: center;
+    }
+
+    .formContainer {
+        display: contents;
+    }
+
+    .contactInput {
+        margin-right: 0;
+        font-size: 14px;
+    }
+
+    .contactText {
+        width: 259px;
+        height: 110px;
+        font-size: 14px;
+    }
+
+    .sendBtn {
+        width: 259px;
+    }
+
+    .fix5 {
+        align-items: baseline;
+        text-align-last: left;    
+        justify-content: flex-start;
+    }
+
+    .socialsRow {
+        flex-direction: row;
+    }
+
+    .footer {
+        margin-top: 0;
+    }
+
+    .footer .column {
+        margin-bottom: 30px;
+    }
+
+    .bottomContainer {
+        background: linear-gradient(180deg, rgba(174,92,36,1) 45%, rgba(102,51,19,1) 55%);
+        height: 1326px;
+    }
+
+    .footerP3 {
+        width: unset;
+    }
+
+    .sendArrow {
+        left: -60px;
+    }
+
+    .copyright {
+        left: 16%;
+    }
+
+    .contactP {
+        font-size: 14px;
+    }
+}
