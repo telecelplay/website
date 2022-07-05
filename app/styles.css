@@ -431,7 +431,7 @@ input[type=number]::-webkit-outer-spin-button {
     margin: 0; 
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 425px) and (min-width: 376px) {
 
     body {
         text-align: -webkit-center;
@@ -556,7 +556,7 @@ input[type=number]::-webkit-outer-spin-button {
     .hand {
         width: 133px;
         height: 169px;
-        left: 280px;
+        left: 240px;
         top: 2841px;
     }
 
@@ -688,5 +688,9 @@ input[type=number]::-webkit-outer-spin-button {
     .input {
         margin-top: 10px;
         float: left;
+    }
+
+    .fix6 {
+        width: 100%
     }
 }
