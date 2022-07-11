@@ -417,10 +417,11 @@ p {
 .copyright {
     font-size: 12px;
     position: relative;
-    top: 55px;
+    top: 45px;
     color: #fff;
     text-align: -webkit-center;
     font-weight: 100;
+    letter-spacing: 0.2em;
 }
 
 .hide {
